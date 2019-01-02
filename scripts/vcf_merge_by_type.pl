@@ -47,12 +47,12 @@ GetOptions ("broad_snv=s" => \$broad_snv,
 			"broad_indel=s" => \$broad_indel,
 			"sanger_indel=s" => \$sanger_indel,
 			"dkfz_embl_indel=s" => \$de_indel,
-			"smufin_indel=s" => \$smufin_indel,
+#			"smufin_indel=s" => \$smufin_indel,
 			"indir=s" => \$in_dir,
 			"outdir=s" => \$out_dir);
 
 my @snv = (split(/,/,$broad_snv), split(/,/,$sanger_snv), split(/,/,$de_snv), split(/,/,$muse_snv));
-my @indel = (split(/,/,$broad_indel), split(/,/,$sanger_indel), split(/,/,$de_indel), split(/,/,$smufin_indel));
+my @indel = (split(/,/,$broad_indel), split(/,/,$sanger_indel), split(/,/,$de_indel));
 my @sv = (split(/,/,$broad_sv), split(/,/,$sanger_sv), split(/,/,$de_sv));
 
 process($out_dir."/snv.clean", @snv);
