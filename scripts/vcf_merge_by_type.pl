@@ -48,7 +48,7 @@ GetOptions ("broad_snv=s" => \$broad_snv,
 			"sanger_indel=s" => \$sanger_indel,
 			"dkfz_embl_indel=s" => \$de_indel,
 #			"smufin_indel=s" => \$smufin_indel,
-			"indir=s" => \$in_dir,
+#			"indir=s" => \$in_dir,
 			"outdir=s" => \$out_dir);
 
 my @snv = (split(/,/,$broad_snv), split(/,/,$sanger_snv), split(/,/,$de_snv), split(/,/,$muse_snv));
