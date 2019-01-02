@@ -72,7 +72,7 @@ sub process {
 ##variant_merge=$out_file
 #CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO
 EOS
-
+  print "out_file : $out_file \n";
   open my $OUT, ">$out_file.vcf" or die;
 
   print $OUT $header;
